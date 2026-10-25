@@ -1,0 +1,19 @@
+role,skills,popularity
+Data Scientist,python;sql;machine learning;statistics;data analysis;pandas;data visualization,9
+Machine Learning Engineer,python;machine learning;deep learning;tensorflow;pytorch;docker;mlops,9
+AI Engineer,python;deep learning;nlp;llms;prompt engineering;apis;machine learning,10
+Data Analyst,sql;excel;data analysis;data visualization;statistics;tableau;power bi,8
+Data Engineer,python;sql;spark;etl;aws;airflow;data warehousing,8
+DevOps Engineer,aws;docker;kubernetes;ci/cd;linux;terraform;git;automation,9
+Cloud Engineer,aws;azure;cloud computing;terraform;linux;networking;automation,8
+Cloud Architect,cloud computing;aws;azure;networking;security;kubernetes;system design,7
+Backend Developer,java;python;sql;apis;git;docker;data structures,9
+Frontend Developer,html;css;javascript;react;git;typescript;ui design,8
+Full Stack Developer,html;css;javascript;react;node.js;sql;apis;git,9
+Mobile App Developer,kotlin;swift;flutter;apis;git;ui design;firebase,7
+Cybersecurity Analyst,security;networking;linux;python;ethical hacking;cryptography,8
+Site Reliability Engineer,linux;kubernetes;python;automation;monitoring;ci/cd;aws,7
+Systems Administrator,linux;networking;automation;bash;security;windows server;monitoring,6
+QA Automation Engineer,python;selenium;automation;ci/cd;git;java;testing,6
+Software Engineer,data structures;algorithms;java;python;git;sql;system design,10
+UI/UX Designer,ui design;figma;html;css;user research;prototyping,6

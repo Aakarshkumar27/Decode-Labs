@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iris Classifier | DecodeLabs Project 2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Iris Classifier</h1>
+      <p>Data Classification Using AI · K-Nearest Neighbors · DecodeLabs Project 2</p>
+    </header>
+
+    <section class="card">
+      <h2>1. Input: the dataset</h2>
+      <div class="stats">
+        <div><b>150</b><span>Samples</span></div>
+        <div><b>4</b><span>Features</span></div>
+        <div><b>3</b><span>Classes</span></div>
+      </div>
+      <div class="table-scroll">
+        <table id="preview"></table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>2. Process: split and train</h2>
+      <div class="controls">
+        <label>Test size: <b id="split-label">20%</b>
+          <input type="range" id="split" min="10" max="40" step="5" value="20" />
+        </label>
+        <label>K (neighbors): <b id="k-label">5</b>
+          <input type="range" id="k" min="1" max="25" step="1" value="5" />
+        </label>
+        <label class="check"><input type="checkbox" id="scale" checked /> Feature scaling (StandardScaler)</label>
+        <button id="train-btn">Train and evaluate</button>
+      </div>
+      <p id="split-info" class="note"></p>
+    </section>
+
+    <section class="card" id="results" hidden>
+      <h2>3. Output: validation</h2>
+      <div class="stats">
+        <div><b id="acc">-</b><span>Accuracy</span></div>
+        <div><b id="f1">-</b><span>F1 score (weighted)</span></div>
+      </div>
+
+      <h3>Confusion matrix <small>(rows = actual, columns = predicted)</small></h3>
+      <div class="table-scroll"><table id="cm"></table></div>
+
+      <h3>Precision, recall and F1 per class</h3>
+      <div class="table-scroll"><table id="report"></table></div>
+
+      <h3>Tuning the engine: error rate vs K</h3>
+      <canvas id="k-chart" width="640" height="260"></canvas>
+    </section>
+
+    <section class="card">
+      <h2>4. Predict a new flower</h2>
+      <div class="predict">
+        <label>Sepal length (cm) <input type="number" step="0.1" id="f0" value="5.9" /></label>
+        <label>Sepal width (cm) <input type="number" step="0.1" id="f1in" value="3.0" /></label>
+        <label>Petal length (cm) <input type="number" step="0.1" id="f2" value="5.1" /></label>
+        <label>Petal width (cm) <input type="number" step="0.1" id="f3" value="1.8" /></label>
+      </div>
+      <button id="predict-btn">Classify flower</button>
+      <p id="prediction" class="prediction"></p>
+    </section>
+
+    <footer>Built by Aakarsh Kumar · Batch 2026</footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

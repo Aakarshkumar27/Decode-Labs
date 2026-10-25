@@ -1,0 +1,28 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", system-ui, sans-serif; background: #f4f1ea; color: #1f2933; padding: 16px; }
+.wrap { max-width: 760px; margin: 0 auto; }
+header { text-align: center; padding: 20px 0 12px; }
+header h1 { font-size: 30px; color: #1d3f8a; }
+header p { color: #6b6a63; font-size: 14px; margin-top: 4px; }
+.card { background: #fff; border: 1px solid #e0dccf; border-radius: 12px; padding: 18px; margin-bottom: 16px; }
+.card h2 { font-size: 18px; color: #1d3f8a; margin-bottom: 12px; }
+.add { display: flex; gap: 8px; }
+.add input { flex: 1; padding: 10px 12px; border: 1px solid #c9c4b5; border-radius: 8px; font-size: 15px; }
+button { background: #c8553d; color: #fff; border: none; border-radius: 8px; padding: 10px 16px; font-size: 15px; font-weight: 600; cursor: pointer; }
+button:hover { background: #a9442f; }
+button.ghost { background: transparent; color: #1d3f8a; border: 1px solid #1d3f8a; }
+.msg { min-height: 20px; font-size: 13px; color: #c8553d; margin: 8px 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.chip { background: #eef2fb; color: #1d3f8a; border: 1px solid #b9c6e6; border-radius: 999px; padding: 4px 12px; font-size: 13px; cursor: pointer; }
+.chip.on { background: #1d3f8a; color: #fff; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.count { font-size: 13px; color: #6b6a63; margin-top: 10px; }
+.item { border: 1px solid #e0dccf; border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+.item h3 { font-size: 17px; display: flex; justify-content: space-between; gap: 8px; }
+.item h3 b { color: #c8553d; }
+.bar { height: 8px; background: #eee9dc; border-radius: 4px; margin: 8px 0; overflow: hidden; }
+.bar i { display: block; height: 100%; background: #c8553d; }
+.item p { font-size: 13px; margin-top: 4px; }
+.have { color: #2b7a4b; }
+.learn { color: #6b6a63; }
+footer { text-align: center; font-size: 12px; color: #8a887f; padding: 12px 0 20px; }

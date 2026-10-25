@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Stack Recommender | DecodeLabs Project 3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Tech Stack Recommender</h1>
+      <p>Content-based filtering · TF-IDF + Cosine Similarity · DecodeLabs Project 3</p>
+    </header>
+
+    <section class="card">
+      <h2>1. Pick at least 3 skills</h2>
+      <form id="add-form" class="add">
+        <input id="skill-input" placeholder="Type a skill (e.g. python, k8s, cloud) and press Enter" autocomplete="off" />
+        <button type="submit">Add</button>
+      </form>
+      <p id="msg" class="msg"></p>
+      <div id="chips" class="chips"></div>
+      <div class="actions">
+        <button id="go">Recommend</button>
+        <button id="trending" class="ghost">Show trending roles</button>
+        <button id="clear" class="ghost">Clear</button>
+      </div>
+      <p class="count"><span id="count">0</span> selected</p>
+    </section>
+
+    <section class="card" id="results" hidden>
+      <h2 id="results-title">Top 3 career paths</h2>
+      <div id="list"></div>
+    </section>
+
+    <footer>Built by Aakarsh Kumar · Batch 2026</footer>
+  </main>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
