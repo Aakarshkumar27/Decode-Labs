@@ -1,0 +1,3 @@
+DECODELABS Al PROJECT 4
+Optical Character Recognition
+The machine can see text
